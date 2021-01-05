@@ -1,0 +1,14 @@
+<title>Get Data</title>
+
+<form action="/get-data" method="POST">
+
+  <div class="form-group">
+    <label>Ticker</label>
+    <input type="text" class="form-control" id="ticker" name="ticker" placeholder="TICKER">
+  </div>
+<button type="submit" class="btn btn-primary">Get</button>
+</form>
+
+{% for para in string_variable %}
+    <p>{{para}}</p>
+{% endfor %}
