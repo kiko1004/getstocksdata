@@ -58,6 +58,7 @@ def getStockData_string(ticker):
     two = ("Market Cap " + marketCap)
     three = ("Dividend & Yield " + str(quote["Forward Dividend & Yield"]))
     f = ("P/E " + str(quote["PE Ratio (TTM)"]))
+    f_2 = ("Price-to-Cashflow  " + a["P/FCF"])
     five = ("Price/Sales " + psratio)
     six = ("Debt/Equity " + debtEquity)
     seven = ("Return-On-Assets " + returnOnAssets)
@@ -66,8 +67,9 @@ def getStockData_string(ticker):
     ten = ("Net Income " + str(income.iloc[4, 0]))
     eleven = ("Operating Income " + str(income.iloc[8, 0]))
     twelve = ("Gross Profit " + str(income.iloc[6, 0]))
+    t_2 = ("Total Assets  " + str(sheet.iloc[3, 0]))
     thirteen = ("Total Liabilities " + str(sheet.iloc[0, 0]))
     fourteen = ("Total Shareholder Equity " + str(sheet.iloc[1, 0]))
     fifteen = ("Net Cashflow " + str(cash.iloc[8, 0]))
 
-    return one + "\n" + two + "\n" + three + "\n" + f + "\n" + five + "\n" + six + "\n" + seven + "\n" + eight + "\n" + nine + "\n" + ten + "\n" + eleven + "\n" + twelve + "\n" + thirteen + "\n" + fourteen + "\n" + fifteen
+    return one + "\n" + two + "\n" + three + "\n" + f + "\n"+ f_2+ "\n" + five + "\n" + six + "\n" + seven + "\n" + eight + "\n" + nine + "\n" + ten + "\n" + eleven + "\n" + twelve + "\n" + t_2 + "\n" + thirteen + "\n" + fourteen + "\n" + fifteen
