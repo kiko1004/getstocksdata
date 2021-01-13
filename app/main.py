@@ -42,6 +42,10 @@ def get_data():
 
         except:
             data = "TICKER NOT FOUND"
+            a = 'TICKER NOT FOUND'
+            lables = 'TICKER NOT FOUND'
+            values = 'TICKER NOT FOUND'
+            ziper = 'TICKER NOT FOUND'
 
         return render_template("index.html", string_variable=data.split('\n'), a_data = a, labels = lables, values=values, ziper = ziper)
 
